@@ -8,10 +8,12 @@ import Landing from './pages/landing.jsx'
 import Login from './pages/login.jsx';
 import Register from './pages/register.jsx';
 import MainLayout from './pages/mainLayout.jsx'
+import Home from './pages/home.jsx'
+import TotalEvents from './pages/totalEvents.jsx'
+import Upcoming from './pages/upcoming.jsx'
+import Closed from './pages/closed.jsx'
 import Add from './pages/add.jsx'
 import Detail from './pages/detail.jsx'
-import EventTable from './pages/eventTable.jsx'
-import Home from './pages/home.jsx'
 import DeconnexionSure from './pages/deconnexionSure.jsx'
 
 function App () {
@@ -37,9 +39,11 @@ function App () {
         >
                 <Route index element={<Home/>}/>
                 <Route path="home" element={<Home/>}/>
+                <Route path="totalEvents" element={<TotalEvents/>}/>
+                <Route path="upcoming" element={<Upcoming/>}/>
+                <Route path="closed" element={<Closed/>}/>
                 <Route path="add" element={<Add/>}/>
                 <Route path="detail" element={<Detail/>}/>
-                <Route path="events" element={<EventTable/>}/>
                 <Route path="deconnexionSure" element={<DeconnexionSure/>}/>
         </Route>
 

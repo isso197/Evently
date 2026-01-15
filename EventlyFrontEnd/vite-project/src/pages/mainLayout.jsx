@@ -9,9 +9,10 @@ function MainLayout(){
 		<>
 				<nav>
 					<Link to="home">Home|</Link>
+					<Link to="totalEvents">Total|</Link>
+					<Link to="upcoming">Upcoming |</Link>
+					<Link to="closed">Closed |</Link>
 					<Link to="add">Add   |</Link>
-					<Link to="eventTable">Events  |</Link>
-					<Link to="detail">Details |</Link>
 					<button onClick={f0}>Deconnexion</button>
 				</nav>
 				<Outlet key={location.pathname}/>

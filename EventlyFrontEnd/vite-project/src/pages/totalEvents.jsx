@@ -1,6 +1,6 @@
 import {useState , useEffect} from 'react'
 import {useNavigate} from 'react-router-dom'
-function EventTable(){
+function TotalEvents(){
 	const [tableData , setTableData] = useState([]);
 	const [searchInput , setSearchInput] = useState("");
 	const navigate = useNavigate();
@@ -69,4 +69,4 @@ function EventTable(){
 		</>
 	);
 }
-export default EventTable 
+export default TotalEvents 
